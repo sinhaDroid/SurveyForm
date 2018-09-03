@@ -1,0 +1,116 @@
+<!DOCTYPE html lang="en">
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>#100DaysOfCode Feedback Survey Form</title>
+        
+        <!-- Bootstrap -->    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Custom CSS Files -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 mx-auto">
+                    <header class="text-center">
+                        <h1 id="title" class="center">#100DaysOfCode Feedback Survey Form</h1>
+                        <p id="description" class="center">Tell me about your experience in #100days of code challenge.</p>
+                    </header>
+                    <main class="col-12 col-md-10 col-lg-8 mx-auto">
+                        <form id="survey-form" spellcheck="true">
+                            <fieldset>
+                                <legend><label for="name" id="name-label">Name</label></legend>
+                                <input type="text" id="name" placeholder="Enter your name" autocomplete="name" name="Person"
+                                    required />
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><label for="email" id="email-label">Email</label></legend>
+                                <input type="email" id="email" minlength="6" placeholder="Enter your email" autocomplete="email"
+                                    name="Person-email" required />
+                            </fieldset>
+
+                            <fieldset>
+                                    <legend><label for="number" id="number-label">How many days through the #100DaysOfCode challenge are you?</label></legend>
+                                    <input type="number" name="number" id="number"  min="9" max="999" placeholder="100">
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><label for="dropdown" id="dropdown-label">What is your rating for this challenge, out of ten?</label></legend>
+                                <select name="dropdown" id="dropdown" required>
+                                    <option value="1" selected="">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Are you:</legend>
+                                <input type="radio" name="gender" value="male" id="male">
+                                <label for="male" name="gender">Male</label><br>
+                                <input type="radio" name="gender" value="female" id="female">
+                                <label for="female" name="gender">Female</label><br>
+                                <input type="radio" name="gender" value="other" id="other">
+                                <label for="other" name="gender">Other</label><br>
+                                <input type="radio" name="gender" value="prefernottosay" id="prefernottosay">
+                                <label for="prefernottosay" name="gender">Prefer Not To Say</label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>What are your reasons for starting the #100DaysOfCode challenge?</legend>
+                                <input id="one" type="checkbox" name="reason" value="1">
+                                <label for="one">Interested in programming</label><br>
+                                <input id="two" type="checkbox" name="reason" value="2">
+                                <label for="two">To get a programming job</label><br>
+                                <input id="three" type="checkbox" name="reason" value="3">
+                                <label for="three">To improve your logic</label><br>
+                                <input id="four" type="checkbox" name="reason" value="4">
+                                <label for="four">To earn more money</label><br>
+                                <input id="five" type="checkbox" name="reason" value="5">
+                                <label for="five">To become a freelancer</label><br>
+                                <input id="six" type="checkbox" name="reason" value="6">
+                                <label for="six">To improve the world</label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend> <label for="number" id="number-label">From 0 to 5 how do you like #100DayOfCode challenge idea?</label>
+                                </legend>
+                                <input type="number" id="number" min="0" max="5" name="likeApp_0_5" value="1" placeholder="Enter quantity" />
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><label for="comments">Please let us know your thoughts or any further comments? If so, please enter them here:</label></legend>
+                                <textarea id="comments" name="Comments" rows="10" placeholder="Enter your comment here."></textarea>
+                            </fieldset>
+
+                            <div class="center"><input type="submit" id="submit" value="SEND" /></div>
+
+                        </form>
+                    </main>
+                    <footer class="text-center">&copy; Deepanshu Sinha, 2018.</footer>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
